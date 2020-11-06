@@ -1,0 +1,54 @@
+.title-box {
+  flex-direction: column;
+  text-align: center;
+  flex: 1;
+  max-width: 213px;
+  min-width: 213px;
+  overflow: hidden;
+}
+
+.todo-list_item {
+  display: flex;
+  margin: 0px 8px;
+  padding: 3px 0;
+}
+
+.todo-list_item:not(:last-child) {
+  border-bottom: 1px solid #595959;
+}
+
+.todo-list .todo-list_item .title-box .createdAt {
+  font-size: 9px;
+}
+
+.todo-list .title-box div {
+  color: #D0D1D5;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.title-box.completed .title {
+  text-decoration: line-through;
+  color: #D0D1D5;
+}
+
+.buttons {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.buttons button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.buttons .completed {
+  color: #35bb35;
+}
+
+.buttons .delete {
+  color: #d03131;
+}
